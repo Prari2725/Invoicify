@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="https://twitter.com/yourprofile"
               className="text-gray-400 hover:text-indigo-600 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Footer = () => {
               <span className="sr-only">Twitter</span>
             </a>
             <a
-              href="#"
+              href="https://github.com/yourprofile"
               className="text-gray-400 hover:text-indigo-600 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
@@ -30,7 +30,7 @@ const Footer = () => {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/yourprofile"
               className="text-gray-400 hover:text-indigo-600 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
