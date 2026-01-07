@@ -55,7 +55,7 @@ invoice-system/
    ```bash
    mvn spring-boot:run
    ```
-The backend will start on http://localhost:8080
+The backend is host on Raiway
 
 ### Frontend Setup
 1. Navigate to the frontend directory:
@@ -70,7 +70,7 @@ The backend will start on http://localhost:8080
    ```bash
    npm start
    ```
-The frontend will start on http://localhost:3000
+The frontend is host on cloudflare and acess through https://invoicify-5nm.pages.dev/
 
 ## API Documentation
 
@@ -84,8 +84,6 @@ The frontend will start on http://localhost:3000
 - PUT /api/invoices/{id} - Update invoice
 - DELETE /api/invoices/{id} - Delete invoice
 
-## Testing
-Import the Postman collection from `postman/Invoice_System.postman_collection.json` to test the APIs.
 
 ## Features
 - User authentication with JWT
