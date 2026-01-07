@@ -306,7 +306,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { FaFileInvoiceDollar, FaLock, FaUser, FaEnvelope, FaBuilding, FaPhone, FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaEye, FaEyeSlash } from 'react-icons/fa';
 import IconWrapper from '../components/shared/IconWrapper';
 
 const SignUp = () => {
