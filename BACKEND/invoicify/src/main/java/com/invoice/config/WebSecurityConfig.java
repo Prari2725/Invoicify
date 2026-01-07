@@ -37,12 +37,16 @@ public class WebSecurityConfig {
             .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()
-                
-                .requestMatchers("/api/public/**").permitAll()
-                .requestMatchers("/error").permitAll()
-                .anyRequest().authenticated()
-            )
+    .requestMatchers(
+        "/",
+        "/actuator/**",
+        "/api/auth/**",
+        "/api/public/**",
+        "/error"
+    ).permitAll()
+    .anyRequest().authenticated()
+)
+
             .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();

@@ -36,6 +36,10 @@ public class AuthController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/")
+    public String home() {
+        return "Invoicify Backend is running 🚀";
+    }
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest) {
         logger.info("Received signup request for username: {}", signupRequest.getUsername());
