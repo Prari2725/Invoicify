@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
+@CrossOrigin(origins = "https://invoicify-5nm.pages.dev")
 
 @RestController
 @RequestMapping("/api/admin")
