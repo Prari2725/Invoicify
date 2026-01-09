@@ -56,7 +56,7 @@
 import axios from 'axios';
 
 // Use environment variable instead of hardcoded URL
-const API_URL = process.env.REACT_API_URL;
+const API_URL = process.env.REACT_APP_API_URL;
 
 // Create axios instance
 const api = axios.create({
