@@ -17,7 +17,7 @@ import java.util.Map;
 @CrossOrigin(origins = "https://invoicify-5nm.pages.dev")
 
 @RestController
-@RequestMapping("/api/invoices")
+@RequestMapping("/invoices")
 public class InvoiceController {
     private static final Logger logger = LoggerFactory.getLogger(InvoiceController.class);
 
