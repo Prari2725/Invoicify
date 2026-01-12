@@ -92,11 +92,11 @@ api.interceptors.response.use(
 
 // Export API calls
 export const invoices = {
-  getAll: () => api.get('/api/invoices'),
-  getById: (id) => api.get(`/api/invoices/${id}`),
-  create: (data) => api.post('/api/invoices', data),
-  update: (id, data) => api.put(`/api/invoices/${id}`, data),
-  delete: (id) => api.delete(`/api/invoices/${id}`),
+  getAll: () => api.get('/invoices'),
+  getById: (id) => api.get(`/invoices/${id}`),
+  create: (data) => api.post('/invoices', data),
+  update: (id, data) => api.put(`/invoices/${id}`, data),
+  delete: (id) => api.delete(`/invoices/${id}`),
 };
 
 export const admin = {
